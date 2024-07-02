@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -458,8 +459,8 @@ nav {
 
 .plans-row {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: nowrap; 
 }
 
 .plan-card {
@@ -993,4 +994,92 @@ form label input:checked + span {
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
+}
+
+
+/*caixa de login*/
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f8f8;
+    margin-top: 60px; /* To avoid header overlap */
+}
+
+.login-container form {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.login-container .form-group {
+    margin-bottom: 10px;
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #ff66b2;
+}
+
+.login-container a {
+    color: #ff1493;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*contato*/
+.contato {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.contato-card p {
+    margin-bottom: 20px;
+}
+
+.cta-button:hover {
+    background-color: #ff459e;
 }

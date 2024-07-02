@@ -1,21 +1,23 @@
-let slideIndex = 0;
-showSlides();
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides() {
+function showSlides(n) {
     const slides = document.querySelectorAll('.banner-slide');
     const dots = document.querySelectorAll('.dot');
+    
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
     
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
+    
     for (let i = 0; i < dots.length; i++) {
         dots[i].classList.remove('active');
     }
+    
     slides[slideIndex - 1].style.display = 'block';
     dots[slideIndex - 1].classList.add('active');
-    setTimeout(showSlides, 40000); // Altera a imagem a cada 2 segundos
 }
 
 function plusSlides(n) {
@@ -25,6 +27,12 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+
+
+setInterval(() => {
+    showSlides(slideIndex += 1);
+}, 20000);
+
 
 /*js para os planos*/
 function showDetails(plan) {
@@ -93,4 +101,33 @@ document.getElementById('signup-form').addEventListener('submit', function(event
         event.preventDefault();
         alert('Por favor, preencha todos os campos.');
     }
+});
+
+
+//js para o login
+document.addEventListener('DOMContentLoaded', function() {
+    var loginBtn = document.getElementById('loginBtn');
+    var loginPopup = document.getElementById('loginPopup');
+
+    loginBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        loginPopup.style.display = loginPopup.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!loginPopup.contains(event.target) && event.target !== loginBtn) {
+            loginPopup.style.display = 'none';
+        }
+    });
+});
+
+/*rolagem*/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
