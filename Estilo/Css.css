@@ -877,37 +877,85 @@ form label input:checked + span {
 
 /* Estilos para telas menores (até 768px de largura) */
 @media only screen and (max-width: 768px) {
-    .container {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        width: 130%;
+       
+        padding: 0 10px;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 20%;
+        padding: 0 10px;
+    }
+
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        width: 110%;
+    }
+
+    .logo img {
+        margin-right: 0;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .menu {
+        gap: 10px;
+        margin-top: 1px;
+        text-align: center;
+        display: block;
+    }
+
+    .footer {
+        text-align: center;
+        width: 125%;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-list {
+        width: 140%;
+        text-align: center;
+    }
+
+    .info-list ul {
+        justify-content: center;
+    }
+
+    .como-funciona {
+        width: 120%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .steps-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .container3 {
-        flex-direction: column;
+    .signup{
+        width: 125%;
+    }
+
+    .sobre-nos{
+        width: 125%;
+    }
+
+    .banner-container{
+        width: 130%;
         align-items: center;
-    }
-    .container3 {
-        width:100%;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-    .logo img {
-        margin-right: 0;
-    }
-    nav {
-        text-align: center;
-    }
-    .menu {
-        
-        gap: 10px;
-    }
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-column {
-        margin-right: 0;
-        margin-bottom: 20px;
+        display: grid;
     }
 }
 
@@ -916,13 +964,23 @@ form label input:checked + span {
     .plan-card {
         width: 100%;
     }
+
     .carousel-nav {
         padding: 0 10px;
     }
+
     .banner-slide img {
         max-height: 200px;
     }
+
+    .plans-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
+
 
 
 .signup input[type="submit"] {
