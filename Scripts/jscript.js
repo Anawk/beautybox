@@ -85,3 +85,12 @@ function goBack() {
     document.getElementById('plan-selection').style.display = 'block';
 }
 
+document.getElementById('signup-form').addEventListener('submit', function(event) {
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    
+    if (!nome || !email) {
+        event.preventDefault();
+        alert('Por favor, preencha todos os campos.');
+    }
+});

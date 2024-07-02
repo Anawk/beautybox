@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do seu site para SEO aqui.">
     <title>BeautyBox</title>
     <link rel="stylesheet" type="text/css" href="Estilo/CSS.css" />
     <link rel="icon" href="Imagens/logob.png" />
 </head>
 <body>
     <header>
-        <div class="container">
         <div class="logo">
             <img src="Imagens/logop.png" alt="BeautyBox Logo" />
         </div>
+        <div class="container3">
         <nav>
             <ul class="menu">
                 <li><a href="#inicio">Início</a></li>
@@ -211,7 +212,7 @@
                         <td><a href="#planos" class="cta-button">Eu quero</a></td>
                         <td><a href="#planos" class="cta-button">Eu quero</a></td>
                         <td><a href="#planos" class="cta-button">Eu quero</a></td>
-                        <td><a href="#planos" class="cta-button">Eu quero</a></td>
+                        <td><a href="#pass" class="cta-button">Eu quero</a></td>
                     </tr>
                 </tfoot>
             </table>
@@ -270,7 +271,7 @@
                     <button onclick="showDetails('glambag')">Detalhes do plano</button>
                     <button class="subscribe-button">Quero assinar a beautybag</button>
                 </div>
-                <div class="plan-card glampass">
+                <div class="plan-card glampass" id="pass">
                     <h2>beautypass</h2>
                     <img src="path/to/glampass.png" alt="Glam Pass">
                     <form>
@@ -298,11 +299,36 @@
         </div>
     </div>
 
+    <section class="sobre-nos" id="sobre-nos">
+        <h2 style="text-align: center;">Sobre Nós</h2>
+    <div class="content-box">
+        <div class="content">
+            <h1>A beauty combina assinatura, tecnologia e e-commerce para entregar uma experiência de beleza personalizada, econômica e divertida.</h1>
+            <p>Para ter acesso a esse universo e todos os seus benefícios, é preciso escolher uma das nossas 3 assinaturas e planos, preencher o perfil de beleza e depois a nossa tecnologia beautyMatch combina os melhores produtos de acordo com as suas características.</p>
+            <a href="#planos" class="cta-button">Eu quero</a>
+        </div>
+    </div>
+        <div class="benefits">
+            <h2>Nossos Benefícios</h2>
+            <ul>
+                <li>✓ Envio de uma edição temática todo mês para as assinantes de beautybox e beautybag.</li>
+                <li>✓ Nossa tecnologia beautyMatch escolhe e recomenda produtos na Loja e na edição mensal de acordo com suas características e preferências, como seu tipo de pele, cabelo, e outros.</li>
+                <li>✓ Na Loja, assinantes também têm frete grátis nos envios com a beautybox ou beautybag, ou em pedidos acima de R$200 ou 50% OFF em todos os outros envios.</li>
+                <li>✓ Programa de beauty points, no qual as beauty girls podem acumular beautypoints e trocar por produtos de graça todo mês.</li>
+                <li>✓ Acesso a maior comunidade de beleza, nosso grupo fechado de assinantes e acesso a esses conteúdos exclusivos para você!</li>
+            </ul>
+            <a href="#planos" class="cta-button">Eu quero</a>
+        </div>
+        <div class="image">
+            <img src="Imagens/logop.png" alt="Imagem Beauty">
+        </div>
+    </section>
+
     <div class="signup">
         <h2>Cadastre-se e receba descontos!</h2>
         <form action="#" method="post">
-            <input type="text" name="nome" placeholder="Digite seu nome" required>
-            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
             <input type="submit" value="Enviar">
         </form>
     </div>
