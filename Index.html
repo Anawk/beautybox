@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyBox</title>
+    <link rel="stylesheet" type="text/css" href="Estilo/CSS.css" />
+    <link rel="icon" href="Imagens/logob.png" />
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div class="logo">
+            <img src="Imagens/logop.png" alt="BeautyBox Logo" />
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Marcas.html">Marcas</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div class="banner-container">
+        <div class="banner-slide">
+            <img src="Imagens/icon1.png" alt="Banner 1">
+        </div>
+        <div class="banner-slide">
+            <img src="Imagens/icon2.png" alt="Banner 2">
+        </div>
+        <div class="banner-slide">
+            <img src="Imagens/icon3.png" alt="Banner 3">
+        </div>
+        
+        <div class="carousel-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <div class="carousel-nav">
+            <button class="nav-btn prev-btn" onclick="plusSlides(-1)">❮</button>
+            <button class="nav-btn next-btn" onclick="plusSlides(1)">❯</button>
+        </div>
+    </div>
+   
+    <div class="info-list">
+        <ul>
+            <li><strong style="color: #FB607F;">Acessível:</strong> os melhores preços do Brasil!</li>
+            <li><strong style="color: #FB607F;">Personalizado:</strong> produtos para o seu perfil</li>
+            <li><strong style="color: #FB607F;">Divertido:</strong> ganhe pontos, edições temáticas e mais</li>
+            <li> <a href="#planos"><span class="highlight-box"><strong style="color: #FB607F;">Assine a Beauty e economize!</strong> </a></span></li>
+        </ul>
+    </div>
+
+    <section class="como-funciona">
+        <h2>Como funciona</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="icon">
+                    <img src="Imagens/icon1.png" alt="Passo 1">
+                    <div class="step-number">1</div>
+                </div>
+                <p>Escolha seu plano BeautyBox: combo, box, bag ou pass. <a href="#ideal">Saiba qual é o ideal para você</a></p>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <img src="Imagens/icon2.png" alt="Passo 2">
+                    <div class="step-number">2</div>
+                </div>
+                <p>Escolha a recorrência: anual, semestral ou mensal. <a href="#entenda">Entenda o melhor para você</a></p>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <img src="Imagens/icon3.png" alt="Passo 3">
+                    <div class="step-number">3</div>
+                </div>
+                <p>Preencha seu perfil de beleza. <a href="#tecnologia">Conheça nossa tecnologia BeautyMatch</a></p>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <img src="Imagens/icon4.png" alt="Passo 4">
+                    <div class="step-number">4</div>
+                </div>
+                <p>Aproveite os benefícios de ser assinante com acesso instantâneo aos descontos na loja</p>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <img src="Imagens/icon5.png" alt="Passo 5">
+                    <div class="step-number">5</div>
+                </div>
+                <p>Receba sua edição do mês</p>
+            </div>
+        </div>
+        <div class="cta">
+            <a href="#planos" class="cta-button">Eu quero</a>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <section class="planos">
+            <div class="titulo-imagens">
+                <h2>Entenda nossas assinaturas</h2>
+                <div class="imagens">
+                    <div>
+                        <img src="file-vT7RlwwQ8mBCODKgGZTGKoW7" alt="beautybox">
+                        <p>beautybox</p>
+                    </div>
+                    <div>
+                        <img src="file-7Pl1GOyKBfZIw2txALSI4XNx" alt="beautybox">
+                        <p>beautybox</p>
+                    </div>
+                    <div>
+                        <img src="file-7Pl1GOyKBfZIw2txALSI4XNx" alt="beautybag">
+                        <p>beautybag</p>
+                    </div>
+                    <div>
+                        <img src="file-U8qrr7isAfqGBeMRze9ORbeD" alt="beautypass">
+                        <p>beautypass <span class="info-icon" title='Compre o combo (R$148,00), a box (R$94,90) ou a bag (R$53,90) quando quiser'>i</span></p>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>beautycombo</th>
+                        <th>beautybox</th>
+                        <th>beautybag</th>
+                        <th>beautypass</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kit mensal incluso</td>
+                        <td>box + bag</td>
+                        <td>box</td>
+                        <td>bag</td>
+                        <td>Compra avulsa</td>
+                    </tr>
+                    <tr>
+                        <td>Produtos por kit</td>
+                        <td>8 a 11</td>
+                        <td>5 a 7</td>
+                        <td>3 a 4</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Valor em produtos que irá receber</td>
+                        <td>+R$340</td>
+                        <td>+R$240</td>
+                        <td>+R$100</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Edições especiais por ano</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Compras na loja com o melhor preço do Brasil!</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                    </tr>
+                    <tr>
+                        <td>Produtos de graça com beautypoints</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Frete grátis em pedidos na loja</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td>---</td>
+                        <td>50% de desconto no frete normal</td>
+                    </tr>
+                    <tr>
+                        <td>Recomendações personalizadas com BeautyMatch</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Acesso à comunidade Beauty</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td class="check">✓</td>
+                        <td>---</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td><a href="#planos" class="cta-button">Eu quero</a></td>
+                        <td><a href="#planos" class="cta-button">Eu quero</a></td>
+                        <td><a href="#planos" class="cta-button">Eu quero</a></td>
+                        <td><a href="#planos" class="cta-button">Eu quero</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+
+    <br>
+    <br>
+<!--seleção dos planos-->
+    <div class="container2" id="planos">
+        <div id="plan-selection">
+            <h2 style="text-align: center;">Escolha já a sua!</h2>
+            <div class="plans-row">
+                <div class="plan-card glamcombo">
+                    <h2>beautycombo</h2>
+                    <img src="path/to/glamcombo.png" alt="Glam Combo">
+                    <form>
+                        <label><input type="radio" name="glamcombo" checked> Anual R$122,80 / mês</label>
+                        <label><input type="radio" name="glamcombo"> Semestral R$138,80 / mês</label>
+                        <label><input type="radio" name="glamcombo"> Mensal R$148,80 / mês</label>
+                    </form>
+                    <ul>
+                        <li>• Todo mês uma box e bag temática com 8 a 11 produtos com valor +R$340</li>
+                        <li>• Ganhe 100 beautypoints ao assinar</li>
+                    </ul>
+                    <button onclick="showDetails('glamcombo')">Detalhes do plano</button>
+                    <button class="subscribe-button">Quero assinar a beautycombo</button>
+                </div>
+                <div class="plan-card glambox">
+                    <h2>beautybox</h2>
+                    <img src="path/to/glambox.png" alt="Glam Box">
+                    <form>
+                        <label><input type="radio" name="glambox" checked> Anual R$79,90 / mês</label>
+                        <label><input type="radio" name="glambox"> Semestral R$89,90 / mês</label>
+                        <label><input type="radio" name="glambox"> Mensal R$94,90 / mês</label>
+                    </form>
+                    <ul>
+                        <li>• Todo mês uma box temática com 5 a 7 produtos com valor +R$240</li>
+                        <li>• Ganhe 75 beautypoints ao assinar</li>
+                    </ul>
+                    <button onclick="showDetails('glambox')">Detalhes do plano</button>
+                    <button class="subscribe-button">Quero assinar a beautybox</button>
+                </div>
+                <div class="plan-card glambag">
+                    <h2>beautybag</h2>
+                    <img src="path/to/glambag.png" alt="Glam Bag">
+                    <form>
+                        <label><input type="radio" name="glambag" checked> Anual R$42,90 / mês</label>
+                        <label><input type="radio" name="glambag"> Semestral R$48,90 / mês</label>
+                        <label><input type="radio" name="glambag"> Mensal R$53,90 / mês</label>
+                    </form>
+                    <ul>
+                        <li>• Todo mês uma bag temática com 3 a 4 produtos com valor +R$100</li>
+                        <li>• Ganhe 60 beautypoints ao assinar</li>
+                    </ul>
+                    <button onclick="showDetails('glambag')">Detalhes do plano</button>
+                    <button class="subscribe-button">Quero assinar a beautybag</button>
+                </div>
+                <div class="plan-card glampass">
+                    <h2>beautypass</h2>
+                    <img src="path/to/glampass.png" alt="Glam Pass">
+                    <form>
+                        <label><input type="radio" name="glampass" checked> Mensal R$14,90 / mês</label>
+                        <label><input type="radio" name="glampass"> Semestral R$12,90 / mês</label>
+                        <label><input type="radio" name="glampass"> Anual R$9,90 / mês</label>
+                    </form>
+                    <ul>
+                        <li>• Acesso a todos os benefícios do clube</li>
+                        <li>• Opção de comprar a parte box, bag ou combo</li>
+                        <li>• Ganhe 10 beautypoints ao assinar</li>
+                    </ul>
+                    <button onclick="showDetails('glampass')">Detalhes do plano</button>
+                    <button class="subscribe-button">Quero assinar a beautypass</button>
+                </div>
+            </div>
+        </div>
+        <div id="plan-details" style="display: none;">
+            <div class="details-card">
+                <h2 id="details-title"></h2>
+                <ul id="details-list"></ul>
+                <button onclick="goBack()">Voltar</button>
+                <button id="subscribe-button"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="signup">
+        <h2>Cadastre-se e receba descontos!</h2>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+<div class="footer">
+    <div class="footer-column">
+        <h3>Institucional</h3>
+        <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos e Condições de Uso</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Podemos te ajudar?</h3>
+        <ul>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Entre em Contato</a></li>
+            <li><a href="#">Parcerias</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Redes Sociais</h3>
+        <div class="footer-social-icons">
+            <a href="#"><img src="Imagens/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Imagens/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="Imagens/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3>Pague com</h3>
+        <div class="footer-payment-methods">
+            <img src="Imagens/cartao.png" alt="Cartão">
+            <img src="Imagens/boleto.png" alt="Boleto">
+            <img src="Imagens/pix.png" alt="Pix">
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3>Endereço</h3>
+        <p class="footer-address">Rua BeautyB, 111 - São Paulo - SP</p>
+    </div>
+</div>
+
+<script src="Scripts/jscript.js"></script> 
+</body>
+</html>
