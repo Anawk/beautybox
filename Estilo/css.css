@@ -400,6 +400,8 @@ nav {
     position: relative;
     margin-top: 20px;
 }
+
+
 .banner-slide {
     display: none;
     width: 100%;
@@ -424,9 +426,111 @@ nav {
     cursor: pointer;
 }
 .dot.active {
-    background-color: #555;
+    background-color: #cd5c5c;
 }
 
+.img-desktop{
+    display: none;
+}
+
+.img-mobile{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .img-desktop{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .img-mobile{
+        display: block;
+    }  
+}
+/*
+section.banner{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.banner-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.banner-content input,  .img-mobile{
+display: none;
+}
+
+.banner-slide{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.banner-slide img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position:absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #cd5c5c;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #cd5c5c;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #cd5c5c;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 900px){
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+    }
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+    
+}*/
 /*setas de navegação*/
 .carousel-nav {
     position: absolute;
