@@ -976,6 +976,7 @@ form label input:checked + span {
 .cta-button:hover {
     background-color: #ff459e;
 }
+<<<<<<< HEAD:Estilo/Css.css
 
 
 
@@ -1121,3 +1122,5 @@ form label input:checked + span {
 
 
 }
+=======
+>>>>>>> 00f45a4c4e9d2e7f4d68a2dd4d80d8802947fccd:Estilo/css.css
