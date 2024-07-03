@@ -395,7 +395,7 @@ nav {
 
 /*banners*/
 .banner-container {
-    max-width: 100%;
+    
     overflow: hidden;
     position: relative;
     margin-top: 20px;
@@ -876,113 +876,6 @@ form label input:checked + span {
     color: #333;
 }
 
-/* Estilos para telas menores (até 768px de largura) */
-@media only screen and (max-width: 768px) {
-
-    header{
-        flex-direction: column;
-        align-items: center;
-        width: 130%;
-       
-        padding: 0 10px;
-    }
-
-    .container{
-        flex-direction: column;
-        width: 20%;
-        padding: 0 10px;
-    }
-
-
-    .container2 {
-        flex-direction: column;
-        align-items: center;
-        width: 110%;
-    }
-
-    .logo img {
-        margin-right: 0;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    .menu {
-        gap: 10px;
-        margin-top: 1px;
-        text-align: center;
-        display: block;
-    }
-
-    .footer {
-        text-align: center;
-        width: 125%;
-    }
-
-    .footer-column {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .info-list {
-        width: 140%;
-        text-align: center;
-    }
-
-    .info-list ul {
-        justify-content: center;
-    }
-
-    .como-funciona {
-        width: 120%;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .steps-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .signup{
-        width: 125%;
-    }
-
-    .sobre-nos{
-        width: 125%;
-    }
-
-    .banner-container{
-        width: 130%;
-        align-items: center;
-        display: grid;
-    }
-}
-
-/* Estilos para telas menores (até 480px de largura) */
-@media only screen and (max-width: 480px) {
-    .plan-card {
-        width: 100%;
-    }
-
-    .carousel-nav {
-        padding: 0 10px;
-    }
-
-    .banner-slide img {
-        max-height: 200px;
-    }
-
-    .plans-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}
-
-
 
 .signup input[type="submit"] {
     width: 100%;
@@ -1082,4 +975,149 @@ form label input:checked + span {
 
 .cta-button:hover {
     background-color: #ff459e;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        width: 150%;
+        padding: 0 10px;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 20%;
+        padding: 0 10px;
+    }
+
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        width: 110%;
+    }
+
+    .logo img {
+        margin-right: 0;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .menu {
+        gap: 10px;
+        margin-top: 1px;
+        text-align: center;
+        display: block;
+    }
+
+    .footer {
+        text-align: center;
+        width: 125%;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-list {
+        width: 140%;
+        text-align: center;
+    }
+
+    .info-list ul {
+        justify-content: center;
+    }
+
+    .como-funciona {
+        width: 120%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signup{
+        width: 125%;
+    }
+
+    .sobre-nos{
+        width: 125%;
+    }
+
+    .banner-container {
+        width: 160%;
+        max-width: 160%;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto; 
+    }
+    
+    .banner-slide {
+        width: 100%; 
+        overflow: hidden; 
+    }
+    
+    .banner-slide img {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .carousel-dots {
+        text-align: center; 
+        margin-top: 10px; 
+    }
+    
+    .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center; 
+    }
+    
+    .nav-btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+}
+    
+
+
+@media only screen and (max-width: 480px) {
+    .plan-card {
+        width: 100%;
+    }
+
+    .carousel-nav {
+        padding: 0 10px;
+    }
+
+    .banner-slide img {
+        max-height: 200px;
+    }
+
+    .plans-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
