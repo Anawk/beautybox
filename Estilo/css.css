@@ -221,6 +221,47 @@ header {
     
 }
 
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #FFC0CB;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: trasform 0.3s ease-in;
+    }
+    .menu li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+
+.menu.active{
+    transform: translateX(0);
+}
 
 .container3 {
     display: flex;
@@ -239,6 +280,8 @@ header {
     height: 40px;
     margin-right: 100px;
 }
+
+
 
 
 nav {
@@ -554,7 +597,7 @@ display: none;
 }
 
 /*caixa com os planos*/
-.container2 {
+/*.container2 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -749,7 +792,195 @@ form label input:checked + span {
     background-color: #ff007f;
     color: #fff;
 }
+*/
+.subscription-plans-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .subscription-plans-container__carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+  }
+  
+  .itens-carrosel {
+    display: flex;
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  }
+  
+  .item {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 300px;
+  }
+  
+  .tile {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .sub-card-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sub-card-combo, .sub-card-box, .sub-card-bag, .sub-card-pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .sub-card-combo img, .sub-card-box img, .sub-card-bag img, .sub-card-pass img {
+    margin: 0 10px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .sub-card-container {
+    margin-top: 20px;
+  }
+  
+  .sub-card-container-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sub-card-container-opcao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .sub-card-container-opcao:last-child {
+    border-bottom: none;
+  }
+  
+  .sub-card-container-seletor-ctn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sub-card-container-seletor-ctn p {
+    margin-left: 10px;
+  }
+  
+  .sub-card-container-precos-ctn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sub-card-container-precos-ctn__sup {
+    font-size: 14px;
+  }
+  
+  .sub-card-container-valor-ctn {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+  .sub-card-container-mes-ctn {
+    font-size: 14px;
+  }
+  
+  .sub-card-container-best-seller {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sub-card-container-best-seller img {
+    margin-right: 5px;
+  }
+  
+  .sub-card-benficios-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+  }
 
+  .sub-card-benficios-container ul li{
+    margin: 0;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  
+  .sub-card-botoes-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .button--white-soft-pink {
+    color: #e5007b;
+    background-color: #ffffff;
+    border: 1px solid #e5007b;
+  }
+  
+  .button--white-soft-pink:hover {
+    background-color: #e5007b;
+    color: #ffffff;
+  }
+  
+  .button--full {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .button--rounded {
+    border-radius: 30px;
+  }
+  
+  .button--soft-pink {
+    background-color: #e5007b;
+    color: #ffffff;
+  }
+  
+  .button--soft-pink:hover {
+    background-color: #ff2998;
+  }
+
+  @media (min-width: 769px) {
+    .slider-left-button,
+    .slider-right-button {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .item{
+        width: 90%;
+    }
+  }
+  
 
 /*pagina de produtos*/
 .product-table {
