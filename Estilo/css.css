@@ -793,6 +793,7 @@ form label input:checked + span {
     color: #fff;
 }
 */
+
 .subscription-plans-container {
     margin: 20px;
     padding: 20px;
@@ -809,7 +810,7 @@ form label input:checked + span {
   
   .subscription-plans-container__carousel {
     overflow: hidden;
-    white-space: nowrap;
+    text-wrap: wrap;
     margin-top: 20px;
   }
   
@@ -834,7 +835,7 @@ form label input:checked + span {
   .sub-card-titulo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .sub-card-combo, .sub-card-box, .sub-card-bag, .sub-card-pass {
@@ -858,6 +859,8 @@ form label input:checked + span {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
   }
   
   .sub-card-container-opcao {
@@ -1311,7 +1314,7 @@ form label input:checked + span {
 .cta-button:hover {
     background-color: #ff459e;
 }
-<<<<<<< HEAD:Estilo/Css.css
+
 
 
 
@@ -1457,5 +1460,3 @@ form label input:checked + span {
 
 
 }
-=======
->>>>>>> 00f45a4c4e9d2e7f4d68a2dd4d80d8802947fccd:Estilo/css.css
